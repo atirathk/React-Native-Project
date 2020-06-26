@@ -4,69 +4,111 @@
 		--secondary-color: #000000;
 		--teritary-color: #ee695f;
 		--quaternary-color: #e2e2e4;
+		--first-font: 'Arial', 'Humanist';
 		background-color: var(--primary-color);
 		position: relative;
+		font-family: var(--first-font);
+	}
+	
+	.center-header-container {
+		position: relative;
+		width: 70%;
+		display: inline-block;
+		left: 50%;
+		transform: translateX(-50%);
+		color: var(--teritary-color);
+		/*margin-bottom: 1%;*/
+		display: inline-block;
+	}
+
+	h1 {
+		margin-top: 0;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		/*margin-bottom: 1%;*/
+		display: inline-block;
+	}
+
+	h2 {
+		color: var(--secondary-color);
+		text-align: center;
+		margin: 0;
+		margin-bottom: 0%;
+	}
+
+	.top-bar-padding {
+		position: relative;
+		padding-left: 6%;
+		padding-right: 6%;
+		padding-top: 3%;
 	}
 
 	.top-bar {
+		position: relative;
 		width: 100%;
-		height: 20vh;
+		height: 18vh;
+		margin: all;
+		padding-right: 6%;
 	}
-		h1 {
-			position: relative;
-			text-align: center;
-			color: var(--teritary-color);
-			margin-bottom: 1%
-		}
 
-		.nav-tab {
-			display: inline-block;
-			width: 50%;
-			height: 20%;
-		}
+	.nav-tab {
+		display: inline-block;
+		width: 50%;
+		height: 20%;
+	}
 
-			h2 {
-				color: var(--secondary-color);
-				text-align: center;
-			}
+	.back-arrow {
+		position: relative;
+		display: inline-block;
+		width: 7px;
+		height: 7px;
+		border-left: 2px solid var(--secondary-color);
+		border-top: 2px solid var(--secondary-color);
+		transform: rotate(-45deg);
+		top: -5%;
+	}
 
-		.back-arrow {
-			margin-top: 2px;
-			margin-left: 2px;
-			border-color: var(--secondary-color);
-			transform: rotate(-45deg);
-		}
+	.ellipses {
+		position: relative;
+		top: 20%;
+		align-content: center;
+		display: inline-block;
+		direction: rtl;
+		width: 10%;
+		float: right;
+	}
 
-		.ellipses {
-			background-color: var(--secondary-color);
-			height: 10%;
-			width: 10%
-		}
-			.ellipse {
-				position: absolute;
-				display: inline-block;
-				background-color: var(--secondary-color);
-    			height: 30%;
-    			width: 30%;
-    			border-radius: 50%;
-			}
+	.ellipse {
+		background-color: var(--secondary-color);
+		width: 3px;
+		height: 3px;
+		display: inline-block;
+    	border-radius: 100%;
+    	margin-left: 5%;
+    	margin-right: 5%;
+    	float: inherit;
+	}
 
 	.followers-section, .following-section {
 		width: 100%;
 		height: 80vh;
 	}
-		.follower-box, .following-box {
-			border-top: 1px solid var(--quaternary-color);
-			height: 15vh;
-			width: 100%;
-		}
-			.follower-name, .following-name {
 
-			}
+	.follower-box, .following-box {
+		border-top: 1px solid var(--quaternary-color);
+		height: 15vh;
+		width: 100%;
+	}
+	
+	.follower-name, .following-name {
+	
+	}
+	
+	.follower-description, .following-description {
+	
+	}
 
-			.follower-description, .following-description {
-
-			}
 }
 
 @media (min-width: 800px) {

@@ -32,9 +32,21 @@
 
 	h2 {
 		color: var(--secondary-color);
-		text-align: center;
 		margin: 0;
 		margin-bottom: 0%;
+	}
+
+	h3 {
+		color: var(--secondary-color);
+		margin: 0;
+		margin-bottom: 0%;	
+	}
+
+	p {
+		color: var(--quaternary-color);
+		font-family: var(--first-font);
+		font-size: 0.75em;
+		font-weight: 550;
 	}
 
 	.top-bar-padding {
@@ -56,6 +68,7 @@
 		display: inline-block;
 		width: 50%;
 		height: 20%;
+		text-align: center;
 	}
 
 	.back-arrow {
@@ -95,20 +108,67 @@
 		height: 80vh;
 	}
 
+	.follower-box-padding, .following-box-padding {
+		padding-bottom: 1%;
+		padding-left: 1%;
+		padding-right: 1%;
+	}
+
 	.follower-box, .following-box {
 		border-top: 1px solid var(--quaternary-color);
 		height: 15vh;
 		width: 100%;
+		padding-top: 3%;
+		display: block;
 	}
 	
+	.follower-pic, .following-pic {
+		position: relative;
+		background-color: var(--secondary-color);
+		--radius: 10%;
+		width: var(--radius);
+		padding-top: var(--radius);
+		display: inline-block;
+    	border-radius: 100%;
+    	margin-right: 6%;
+    	bottom: 25%;
+    	left: 0%;
+    	margin-left: 5%;
+	}
+
+	.follower-info, .following-info {
+		position: relative;
+		width: 70%;
+		display: inline-block;
+	}
+
 	.follower-name, .following-name {
-	
+		display: inline;
 	}
 	
 	.follower-description, .following-description {
-	
+		position: relative;
+		display: inline;
 	}
 
+	.follower-members, .following-members {
+		display: inline;
+		padding-right: 5%;
+	}
+
+	.follower-thanks, .following-thanks {
+		display: inline;
+		padding-right: 5%
+	}
+
+	.follower-followers, .following-followers {
+		display: inline;
+		padding-right: 5%;
+	}
+
+	.follower-follow-status, .following-follow-status {
+		display: inline;
+	}
 }
 
 @media (min-width: 800px) {

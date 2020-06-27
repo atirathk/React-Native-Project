@@ -24,8 +24,23 @@ export default function App() {
 				</div>
 			</div>
 			<div className='following-section'>
-				<div className='following-box'></div>
-				<div className='following-box'></div>
+					<div className='following-box-padding'>
+						<div className='following-box'>
+							<div className='following-pic'></div>
+							<div className='following-info'>
+								<div>
+									<span className='follower-follow-status'></span>
+									<h2>Entrpreneur</h2>
+								</div>
+								<p className='following-description'>asdfas</p>
+								<div>
+									<p className='following-members'>8 members</p>
+									<p className='following-thanks'>1.2M Thanks</p>
+									<p className='following-followers'>57k followers</p>
+								</div>
+							</div>
+					</div>
+				</div>
 			</div>
 		</View>
 	);
